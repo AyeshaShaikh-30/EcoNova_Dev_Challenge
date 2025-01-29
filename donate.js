@@ -57,7 +57,7 @@ checkboxes.forEach(checkbox => checkbox.checked = false);
     document.getElementById('results').innerHTML = '';
 }
 function navigateToNextPage() {
-    window.location.href = 'nextpage.html';  // Replace with the actual URL of the next page
+    window.location.href = 'leaderboard.html';  // Replace with the actual URL of the next page
 }
 
 function navigateToTokenPage() {
