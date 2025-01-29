@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0d1b0d; /* Dark forest green */
+    color: #b6f1b6; /* Soft green */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 📦 Main Layout */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 30px;
+}
+
+/* 🍃 Items List */
+.items-list {
+    background: #162c16;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    border: 2px solid #3cae3c;
+    box-shadow: 0 4px 10px rgba(60, 174, 60, 0.3);
+}
+
+/* 🏷 Two-Column Item Grid */
+.items-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%;
+}
+
+/* 🏷 Individual Item */
+.item {
+    display: flex;
+    align-items: center;
+    background: #1f3a1f;
+    padding: 12px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: grab;
+    color: #b6f1b6;
+    border: 1px solid #3cae3c;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item img {
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(60, 174, 60, 0.4);
+}
+
+/* ❌ Rejected Item (turns red) */
+.item.rejected {
+    background: #6b1f1f;
+    border: 2px solid #ff4d4d;
+    color: #ffb3b3;
+    animation: shake 0.4s;
+}
+
+/* 🔴 Shake Animation for Rejected Items */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25%, 75% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+}
+
+/* 🍾 Bottle Section */
+.bottle-container {
+    background: #162c16;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    border: 2px solid #3cae3c;
+    box-shadow: 0 4px 10px rgba(60, 174, 60, 0.3);
+    display: flex;  /* Aligns child divs in a row */
+    gap: 10px;      /* Adds spacing between bottles */
+}
+
+.bottle {
+    width: 200px;
+    height: 350px;
+    background: #1f3a1f;
+    border-radius: 20px;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #3cae3c;
+    box-shadow: 0 4px 10px rgba(60, 174, 60, 0.3);
+}
+
+h2 {
+    animation: fireflyGlow 3s infinite alternate;
+}
+
+/* 🌿 Firefly Glow Effect */
+@keyframes fireflyGlow {
+    0% { text-shadow: 0 0 2px #3cae3c; }
+    50% { text-shadow: 0 0 8px #3cae3c; }
+    100% { text-shadow: 0 0 2px #3cae3c; }
+}
+
+/* Style for the Next Button's container */
+.next-button-container {
+    display: flex;
+    justify-content: center;  /* Centers the button horizontally */
+    align-items: center;  /* Centers the button vertically */
+    height: 20vh;  /* Makes the container take up the full height of the viewport */
+}
+
+/* Style for the Next Button */
+button {
+    font-family: 'Poppins', sans-serif;
+    background-color: #3cae3c; /* Soft green background */
+    color: #fff; /* White text */
+    padding: 25px 45px; /* Some padding around the text */
+    font-size: 22px; /* Larger text */
+    border: none; /* Remove the default border */
+    border-radius: 12px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 14px rgba(60, 174, 60, 0.3); /* Light shadow */
+    margin-top: 20px; /* Space it from the other elements */
+}
+
+button:hover {
+    background-color: #58d758; /* Lighter green when hovered */
+    transform: scale(1.05); /* Slightly enlarge when hovered */
+}
+
+button:active {
+    transform: scale(0.98); /* Slightly shrink when clicked */
+}
+
+/* Mission Text Styling */
+.mission {
+    font-family: 'Poppins', sans-serif; /* Use same font as the heading */
+    font-size: 30px;  /* Slightly smaller than the heading */
+    color: #b6f1b6;  /* Soft green color to match the eco-friendly theme */
+    margin-top: 30px; /* Add space between heading and mission text */
+    margin-bottom: 30px; /* Space it from the items list */
+    line-height: 1.5; /* Slightly increase line spacing for readability */
+}
+.sub-mission {
+    font-family: 'Poppins', sans-serif; /* Use same font as the heading */
+    font-size: 20px;  /* Slightly smaller than the heading */
+    color: #b6f1b6;  /* Soft green color to match the eco-friendly theme */
+    margin-top: 10px; /* Add space between heading and mission text */
+    margin-bottom: 30px; /* Space it from the items list */
+    margin-left: 65px;
+    margin-right: 65px;
+    line-height: 1.5; /* Slightly increase line spacing for readability */
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Brick Sorting Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <h1>🌱 ECO-BRICK SORTING GAME 🌱</h1>
+    <p class="mission">Mission : Build a Cleaner and Safer Future! ♻️</p>
+    <p class="sub-mission">Drag and drop the right plastic items to recycle them properly. But watch out! Some items don’t belong in the brick. Choose wisely and complete the challenge to become an Eco Hero! 🚀</p>
+
+    <div class="container">
+        <!-- 🍃 Two-column list of items -->
+        <div class="items-list">
+            <h2>Available Items</h2>
+            <div class="items-grid">
+                <div class="column" id="column1"></div>
+                <div class="column" id="column2"></div>
+            </div>
+        </div>
+
+        <!-- 🍾 Eco-Brick Bottle -->
+        <div class="bottle-container">
+            <h2>Eco-Brick Bottle</h2>
+            
+            <div class="bottle" id="bottle1" ondragover="allowDrop(event)" ondrop="dropItem(event)"></div>
+            <div class="bottle" id="bottle2" ondragover="allowDrop(event)" ondrop="dropItem(event)"></div>
+            
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
