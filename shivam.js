@@ -27,27 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const returnHomeBtn = document.getElementById("start-btn");
-
-    if (returnHomeBtn) {
-        returnHomeBtn.addEventListener("click", function () {
-            console.log("✅ Button clicked! Starting animation...");
-
-            gsap.to("body", { 
-                opacity: 0, 
-                duration: 0.5, 
-                onComplete: function() {
-                    console.log("✅ Animation done! Opening new tab...");
-                    window.open("ecobrick.html", "_blank"); // Open in new tab
-                    gsap.to("body", { opacity: 1, duration: 0 }); // Reset opacity
-                }
-            });
-        });
-    } else {
-        console.error("❌ Button not found: start-btn");
-    }
-});
-
+document.getElementById("start-btn").onclick = function () {
+    window.open("ecobrick.html", "_blank");
+};
 
 
