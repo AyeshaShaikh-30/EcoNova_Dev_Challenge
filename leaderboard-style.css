@@ -63,7 +63,7 @@ body {
 /* Avatar box styling */
 .avatar {
   margin-top: 10px;
-  background-image: url("images/th_copy.jpg");
+  background-image: url("background.jpg");
   background-size: cover;
   background-position: bottom;
   background-color: #889063; /* Updated color */
