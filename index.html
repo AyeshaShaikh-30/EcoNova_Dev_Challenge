@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoGuardian Avatar Questionnaire</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+  <!-- Landing Page -->
+  <div class="landing-page">
+    <div class="hero-section">
+        <h1><b>EcoNova</b></h1>
+        
+      <h2>Let’s Find Your EcoGuardian Avatar!</h2>
+      <p>Answer a few quick questions to discover which eco-role suits you best.</p>
+      <button class="start-btn" onclick="startQuestionnaire()">Start Questionnaire</button>
+      <button id="myButton" class="float-left submit-button" >Sign-up</button>
+
+    </div>
+    </div>
+  <div class="avatar-preview">
+    <img src="eco-champion-transparent.png" class="preview-avatar" alt="Avatar 1">
+    <img src="eco-recycler-transparent.png" class="preview-avatar" alt="Avatar 2">
+    <img src="eco-novice-transparent.png" class="preview-avatar" alt="Avatar 3">
+</div>
+  
+
+  <!-- Questionnaire Section -->
+  <div class="questionnaire-container" style="display: none;">
+    <div class="question-card">
+      <h2 id="question">How woke are you about the environmental impact of plastic?</h2>
+      <div class="options">
+        <button class="option" id="optionA" onclick="selectOption('A')">Full-on woke! 🌍✨</button>
+        <button class="option" id="optionB" onclick="selectOption('B')">Kinda woke 🌱</button>
+        <button class="option" id="optionC" onclick="selectOption('C')">I’ve thought about it 🤔</button>
+        <button class="option" id="optionD" onclick="selectOption('D')">Barely think about it 😬</button>
+      </div>
+      <div class="funfact" id="funfact" style="display: none;"></div>
+    </div>
+  </div>
+
+  <!-- Avatar Section (on a Separate Page) -->
+  <!--<div class="avatar-section" id="avatarSection" style="display: none;">
+    <h2 id="avatarMessage"></h2>
+    <img id="avatarImage" src="eco-champion-transparent.png" alt="Avatar" style="max-width: 200px;">
+    <div class="avatar-properties" id="avatarStrengths"></div>-->
+    <!-- Optional "Go Back" button (if you want to enable it) -->
+    <!-- <button onclick="goBackToQuestions()">Go Back</button> -->
+  <!--</div>-->
+  <!-- Avatar Section (on a Separate Page) -->
+
+  
+
+  <div id="avatarSection" class="avatar-section">
+    <div class="avatar-container">
+      <img id="avatarImage" src="" alt="Avatar Image" />
+      <div class="avatar-details">
+        <h2 id="avatarMessage"></h2>
+        <div id="avatarProperties" class="avatar-properties">
+          <ul id="avatarStrengths"></ul>
+
+        </div>
+      </div>
+    </div>
+     <button id="explore" type="submit" class="login-btn">Explore</button>
+
+               
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
