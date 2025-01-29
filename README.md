@@ -80,3 +80,6 @@ Community Challenges: Introducing team-based missions to foster collaboration an
 AI Integration: Leveraging AI to provide personalized tips and challenges based on users' habits and progress.
 
 **Let’s flip the script on plastic pollution together! 🌍✨**
+
+## Vote us here:
+https://devpost.com/software/econova-mtajfh?ref_content=user-portfolio&ref_feature=in_progress
