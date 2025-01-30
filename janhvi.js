@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 onComplete: function() {
                     console.log("✅ Animation done! Redirecting...");
                     setTimeout(() => {
-                        window.location.href = "donate.html"; 
+                        window.location.href = "game.html"; 
                     }, 100); 
                 }
             });
