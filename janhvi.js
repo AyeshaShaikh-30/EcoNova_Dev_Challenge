@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const returnHomeBtn = document.getElementById("donate");
+    const donateBtn = document.getElementById("donate");
 
-    if (returnHomeBtn) {
-        returnHomeBtn.addEventListener("click", function () {
+    if (donateBtn) {
+        donateBtn.addEventListener("click", function () {
             console.log("✅ Button clicked! Starting animation...");
             
             gsap.to("body", { 
@@ -10,11 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 duration: 0.5, 
                 onComplete: function() {
                     console.log("✅ Animation done! Redirecting...");
-                    window.location.href = "donate.html"; // Redirect in same tab
+                    setTimeout(() => {
+                        window.location.href = "donate.html"; 
+                    }, 100); 
                 }
             });
         });
     } else {
-        console.error("❌ Button not found: return-home-btn");
+        console.error("❌ Button not found: donate");
     }
 });
