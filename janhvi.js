@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     } else {
-        console.error("❌ Button not found: donate");
+        console.error("❌ Button not found: game");
     }
 });
 
