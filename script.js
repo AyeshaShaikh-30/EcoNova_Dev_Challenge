@@ -189,13 +189,18 @@ gsap.to('.questionnaire-container', {
     // Avatar message reveal
     timeline.fromTo('#avatarMessage', 
       { opacity: 0, y: 50 }, 
-      { opacity: 1, y: 0, duration: 0.5 });
+      { opacity: 1, y: 0, duration: 0.5});
 
     // Reveal strengths with staggered animation
     timeline.fromTo('#avatarStrengths li', 
       { opacity: 0, x: -50 }, 
       { opacity: 1, x: 0, duration: 0.5, stagger: 0.2 });
 
+
+      timeline.fromTo('.login-btn',
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.5, delay: 1.5 }  // 1.5s delay after strengths
+    );
     // Move message and strengths up
     /*
     timeline.to(['#avatarMessage', '#avatarStrengths'], 
@@ -282,14 +287,14 @@ gsap.to('.questionnaire-container', {
 
 document.getElementById("myButton").onclick = function () {
   gsap.to("body", { opacity: 0, duration: 0.5, onComplete: function() {
-      window.open("indexsejal.html", "_blank"); // Opens in a new tab
+      window.open("indexsejal.html"); // Opens in a new tab
       gsap.to("body", { opacity: 1, duration: 0 }); // Resets opacity instantly
   }});
 };
 
 document.getElementById("explore").onclick = function () {
   gsap.to("body", { opacity: 0, duration: 0.5, onComplete: function() {
-      window.open("characters.html", "_blank"); // Opens in a new tab
+      window.open("characters.html"); // Opens in a new tab
       gsap.to("body", { opacity: 1, duration: 0 }); // Resets opacity instantly
   }});
 };
