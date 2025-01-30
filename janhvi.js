@@ -26,13 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const donateBtn = document.getElementById("game");
 
-    if (gameBtn) {
+document.addEventListener("DOMContentLoaded", function () {
+    const gameBtn = document.getElementById("game"); // Get the button
+
+    if (gameBtn) { // Check if button exists
         gameBtn.addEventListener("click", function (event) {
-            event.preventDefault(); // Prevent form submission
-            
+            event.preventDefault(); // Prevent any default action
+
             console.log("✅ Button clicked! Starting animation...");
 
             gsap.to("body", { 
@@ -41,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 onComplete: function() {
                     console.log("✅ Animation done! Redirecting...");
                     setTimeout(() => {
-                        window.location.href = "game.html"; 
+                        window.location.href = "game.html"; // Redirect after animation
                     }, 100); 
                 }
             });
@@ -50,4 +51,3 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("❌ Button not found: game");
     }
 });
-
