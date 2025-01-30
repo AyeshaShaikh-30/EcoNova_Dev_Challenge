@@ -2,9 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const donateBtn = document.getElementById("donate");
 
     if (donateBtn) {
-        donateBtn.addEventListener("click", function () {
-            console.log("✅ Button clicked! Starting animation...");
+        donateBtn.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent form submission
             
+            console.log("✅ Button clicked! Starting animation...");
+
             gsap.to("body", { 
                 opacity: 0, 
                 duration: 0.5, 
