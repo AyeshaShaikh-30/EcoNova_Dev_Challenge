@@ -1,38 +1,38 @@
 const memes = [
     {
-        img: "images/meme1.jpeg", 
+        img: "meme1.jpeg",
         tip: "Be the voice for change—ask for eco-friendly options when dining out. Every request counts!!!🌱🍴"
     },
     {
-        img: "images/meme2.jpeg",
+        img: "meme2.jpeg",
         tip: "If we truly care about marine life, let's act! Reduce plastic, recycle responsibly, and protect our oceans.🐟🌊♻️"
     },
     {
-        img: "images/meme3.jpeg",
+        img: "meme3.jpeg",
         tip: "Say no to double standards. Use reusables and inspire others to do the same!🚫🧴🌍"
     },
     {
-        img: "images/meme4.jpeg",
+        img: "meme4.jpeg",
         tip: "What you throw away can end up in a turtle's home. Choose wisely, act responsibly.🐢🏠🗑️"
     },
     {
-        img:"images/meme8.jpeg",
+        img: "meme8.jpeg",
         tip: "Don't let this be your dinner in 2050! 🍔🚫 Support sustainable habits today for a better tomorrow. 🌱🌊"
     },
     {
-        img:"images/meme9.jpeg",
+        img: "meme9.jpeg",
         tip: "Small steps matter, but we need giant leaps! 🚀♻️ Join us in the fight against plastic pollution. 💪🌍"
     },
     {
-        img:"images/meme7.jpeg",
+        img: "meme7.jpeg",
         tip: "Don’t be like a drifting plastic bag! 💨🌍 Carry reusable totes and lead the change. 🛍️♻️"
     },
     {
-        img:"images/meme6.jpeg",
-        tip:"Be smort, not plastic! 🌟🐟 Say no to single-use plastics and yes to ocean-friendly choices! 🌊✨"
+        img: "meme6.jpeg",
+        tip: "Be smort, not plastic! 🌟🐟 Say no to single-use plastics and yes to ocean-friendly choices! 🌊✨"
     },
     {
-        img:"images/meme5.jpeg",
+        img: "meme5.jpeg",
         tip: "Let’s banish the devil! 🚫🔥 Choose eco-friendly alternatives today. 🌍💚"
     }
 ];
@@ -67,7 +67,7 @@ const quizData = [
             "Oh no! 500 years in a landfill? That’s a whole eternity of sadness 💔. Let’s do better next time!",
             "The turtles are judging you hard 🐢. They deserve clean oceans, not plastic drama!"
         ],
-        meme: "images/bottle.avif"
+        meme: "bottle.avif"
     },
     {
         question: "What’s your favorite way to ditch single-use plastic?",
@@ -81,7 +81,7 @@ const quizData = [
             "You’re trying, and we see you! 🐳 Every small step counts, but let’s aim for bigger ones for a cleaner future 🌊✨.",
             "Plastic Larry says, ‘Why, though? 🥲’ Let’s swap tossing for recycling and make a difference today!"
         ],
-        meme: "images/AI image.webp"
+        meme: "AI image.webp"
     },
     {
         question: "What’s your guilty plastic habit?",
@@ -95,7 +95,7 @@ const quizData = [
             "Takeout is life, we get it! 🍔 But reusable lunchboxes can make you an eco-champion AND keep your food fresh 🌱💼.",
             "Canvas totes are not just a vibe—they’re a revolution! 🛍️✨ Say goodbye to plastic bags and hello to a greener you 🌍."
         ],
-        meme: "images/aiimage3.webp"
+        meme: "aiimage3.webp"
     },
     {
         question: "What would you do if a turtle slid into your DMs?",
@@ -109,7 +109,7 @@ const quizData = [
             "The turtles are clapping for you! 🐢👏 You’re a legend for rocking that reusable bottle and leading the change 🌟.",
             "Leaving it on read? Yikes! 😤 The turtle is disappointed. Time to show some love for the ocean and ditch the plastic drama."
         ],
-        meme: "images/turtle.webp"
+        meme: "turtle.webp"
     },
     {
         question: "How often do you toss plastic guilt-free?",
@@ -150,20 +150,20 @@ function loadQuiz() {
 
 function answerQuiz(option) {
     const quiz = quizData[currentQuestion];
-    
-   
+
+
     document.getElementById("future-result").innerText = quiz.results[option - 1];
-    
-    
+
+
     if (quiz.meme) {
         document.getElementById("quiz-meme").src = quiz.meme;
-        document.getElementById("quiz-meme").style.display = "block"; 
+        document.getElementById("quiz-meme").style.display = "block";
     } else {
-        document.getElementById("quiz-meme").style.display = "none"; 
+        document.getElementById("quiz-meme").style.display = "none";
     }
-    
+
     currentQuestion = (currentQuestion + 1) % quizData.length;
-    setTimeout(loadQuiz, 3000); 
+    setTimeout(loadQuiz, 3000);
 }
 
 
