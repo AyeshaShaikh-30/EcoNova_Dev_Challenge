@@ -1,0 +1,163 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #0d1e2e, #426b69);
+    color: #b7efe1;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(to right, rgba(66, 107, 105, 0.8), rgba(183, 239, 225, 0.8));
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+header:hover {
+    background: linear-gradient(to left, #426b69, #b7efe1);
+    transform: translateY(-4px);
+}
+
+h1 {
+    font-size: 3em;
+    color: rgba(13, 30, 46, 0.8);
+    text-shadow: 3px 3px #426b69;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1.5rem;
+    color:rgba(13, 30, 46, 0.8);
+    opacity: 0.9;
+}
+
+button {
+    background: linear-gradient(to right, #426b69, #0d1e2e);
+    color: #b7efe1;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.4s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+button:hover {
+    background: linear-gradient(to left, #0d1e2e, #426b69);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    margin: 20px 0;
+    padding: 25px;
+    color: #b7efe1;
+    background: rgba(66, 107, 105, 0.85);
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+#giggle-generator {
+    background: linear-gradient(to right, rgba(66, 107, 105, 0.8), rgba(66, 107, 105, 0.8));
+    color: #b7efe1;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    
+}
+
+
+#meme-display img {
+    margin-top: 20px;
+    max-height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease;
+}
+#meme-display img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    border: #426b69;
+}
+
+#meme-display p {
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-style: italic;
+    color: #426b69;
+    background: rgba(183, 239, 225, 0.9);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+#meme-display p:hover {
+    transform: translateY(-5px);
+}
+
+#future-result{
+    color: #b7efe1;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background: rgba(13, 30, 46, 0.8);
+    color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+#time{
+    color:rgba(13, 30, 46, 0.8);
+    text-shadow: 3px 3px #426b69;
+
+    
+
+}
+#quiz-meme {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+#quiz-meme:hover {
+    transform: scale(1.05);
+}
+
+#quiz-question{
+    color: #b7efe1;
+    font-size: 1.5rem;
+
+}
+#meme-tip{
+    color:rgba(13, 30, 46, 0.8);
+    font-size: 1.2rem;
+}
+
+    
+    
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
