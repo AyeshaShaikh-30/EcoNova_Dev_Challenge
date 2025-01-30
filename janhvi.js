@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-<button id="game" type="gamify" class="game-button">Explore Eco-bricking plastic quest !?</button>
 
 
 document.addEventListener("DOMContentLoaded", function () {
