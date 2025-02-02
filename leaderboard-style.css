@@ -270,8 +270,12 @@ tr {
   justify-content: center;
   align-items: center;
   color: #b7efe1;
+  text-decoration: none;
 }
-
+donate-btn:hover{
+   background-color: #056950;
+  color: #89e0cb;
+}
 /* Rewards section */
 .rewards {
   grid-column: 2;
