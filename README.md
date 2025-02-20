@@ -40,8 +40,6 @@ Unlock digital badges for milestones like “Plastic-Free Champion” or “Eco-
 **🌟 Memes Meet Sustainability**
 EcoNova keeps the vibe fun with a steady stream of memes and GIFs. Saving the planet doesn’t have to be boring!
 
-**🌬️ AQI Fun Game**
-Test your environmental knowledge with the AQI game! Match different cities to their air quality ratings and see how your eco-friendly actions can help improve the air around you. Play, learn, and see how the planet’s air improves as you make sustainable choices.
 
 ## ✨Inspiration:
 What sparked EcoNova was a single haunting question: What happens to the plastic we throw "away"? Spoiler: There is no "away." That realization led to countless brainstorming sessions, fueled by documentaries, heartbreaking visuals, and a shared desire to make environmentalism cool, accessible, and impactful.
